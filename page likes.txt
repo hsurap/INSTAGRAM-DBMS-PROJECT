@@ -1,0 +1,10 @@
+-- create table page_likes
+-- (
+--   page_id int,
+--   user_id int references Users(user_id),
+--   primary key(page_id,user_id)
+-- )
+-- insert into page_likes values(1,1),(2,5),(3,8),(4,9),(5,1)
+-- ,(5,2),(5,10),(3,10),(3,9),(1,10),(2,1),(2,2),(1,8)
+
+-- select * FROM page_likes;

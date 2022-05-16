@@ -1,0 +1,24 @@
+-- create table posts(
+--     post_id int primary key,
+--     post_content varchar(100),
+--     post_date date,
+--     user_id int,
+--     foreign key (user_id) references users(user_id)
+-- );
+-- insert into posts values(1,'Vin Deasel','09-02-2022',1);
+-- insert into posts values(2,'WE DIG','04-16-2021',1);
+-- insert into posts values(3,'sky is overarted','02-09-2022',2);  
+-- insert into posts values(4,'post no 4','08-15-2021',2);
+-- insert into posts values(5,'lumos maxima','07-16-200',3);
+-- insert into posts values(6,'cake heals all','11-21-1999',3);
+-- insert into posts values(7,'skys the limit','09-17-1989',4);
+-- insert into posts values(8,'sparkles','05-30-2009',5);
+-- insert into posts values(9,'smile','04-04-2015',5);
+-- insert into posts values(10,'walk it like i talk it','05-14-2015',5);
+-- insert into posts values(11,'amigos','03-21-2006',6);
+-- insert into posts values(12,'expect unexpect','09-09-2012',6);
+-- insert into posts values(13,'yolo','07-25-2004',7);
+-- insert into posts values(14,'night sky','02-04-2010',7);
+-- insert into posts values(15,'small height','08-13-2018',9);
+
+SELECT * FROM posts

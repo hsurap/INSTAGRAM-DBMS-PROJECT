@@ -1,0 +1,28 @@
+-- create table photos(
+--     photo_id int primary key,
+--     post_id int,
+--     image_content varchar(100),
+--     foreign key (post_id) references posts(post_id)
+-- );
+-- insert into photos values(1 , 1 ,'http://images.com/image1' ),
+-- (2 , 1 ,'http://images.com/image2' ),
+-- (3 , 2 ,'http://images.com/image3' ),
+-- (4 , 2 ,'http://images.com/image4' ),
+-- (5 , 3 ,'http://images.com/image5' ),
+-- (6 , 3 ,'http://images.com/image6' ),
+-- (7 , 3 ,'http://images.com/image7' ),
+-- (8 , 4 ,'http://images.com/image8' ),
+-- (9 , 5 ,'http://images.com/image9' ),
+-- (10 , 6 ,'http://images.com/image10'),
+-- (11 , 7,'http://images.com/image11' ),
+-- (12 , 8 ,'http://images.com/image12' ),
+-- (13 , 9 ,'http://images.com/image13' ),
+-- (14 , 9 ,'http://images.com/image14' ),
+-- (15 , 10 ,'http://images.com/image15'),
+-- (16 , 11 ,'http://images.com/image16'),
+-- (17 , 12 ,'http://images.com/image17' ),
+-- (18 , 13 ,'http://images.com/image18' ),
+-- (19 , 14 ,'http://images.com/image19' ),
+-- (20 , 15 ,'http://images.com/image20' );
+
+SELECT * FROM photos

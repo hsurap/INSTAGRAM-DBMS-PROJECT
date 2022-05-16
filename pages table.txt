@@ -1,0 +1,13 @@
+-- create table pages
+-- (
+--   page_id int primary key,
+--   page_name varchar(20),
+--   page_content VARCHAR(200)
+-- );
+-- insert into pages values(1,'andy_the_aircon','Give your audience a mind break with a puzzle')
+-- ,(2,'bill_the_king','Make some barbequeus!')
+-- ,(3,'surely_an_athlete','Master the basics!')
+-- ,(4,'i_killed_cupid','Lets kill some time with creativity!')
+-- ,(5,'jimmy_not_choo','Hack it up');
+
+-- select * FROM pages;

@@ -1,0 +1,11 @@
+-- create table comment_likes
+-- (
+--   comment_id int references comments(comment_id),
+--   user_id int references Users(user_id),
+--   primary key(comment_id,user_id)
+-- )
+-- insert into comment_likes values(1,1)
+-- ,(1,2),(2,1),(2,4),(3,5),(4,5),(4,7)
+-- ,(5,8),(6,8),(13,10)
+
+-- SELECT * FROM comment_likes;
