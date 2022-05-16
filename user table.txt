@@ -1,0 +1,24 @@
+-- create table Users
+-- (
+--   user_id int primary key,
+--   firstname char(10) NOT NULL,
+--   lastname char(10),
+--   address char(130),
+--   email char(25) NOT NULL, 
+--   phone_no char(10) NOT NULL, 
+--   DOB date NOT NULL,
+--   gender char(10)
+-- );
+
+-- INSERT INTO Users VALUES (1,'akshit','sharma','Madhavaram High Road, Perambur','akshitsharma@gmail.com',8875454884,'10-02-2002','male');
+-- INSERT INTO Users VALUES (2,'Rishi','Tapia','ferozepur bus stand','rishitapia@gmail.com',9876543210,'10-10-2000','male'),
+-- (3,'Isiah','Sullivan','Ketayun Mns S R Rd Vile Parle','isiahsullivan',9638527410,'09-03-1998','male');
+-- INSERT INTO Users VALUES
+-- (4,'Emelia','Preston','Miraj Apt Nr. Natubhai','emeliaPreston@yahoo.com',9513248236,'02-22-1980','female'),
+-- (5,'Manue','Knox','Sarang Street, Mandvi','ManueKnox@yahool.co.in',8796542315,'11-23-2003','female'),
+-- (6,'Alec','Dalton','Rajugari Building','alecdalton@gmail.com',7896542583,'10-08-2000','male'),
+-- (7,'Drew','Travis','Airoli Vashi Mumbai','DrewTravis@yahoo.co.in',7563215852,'01-25-1998','male'),
+-- (8,'Makaila','Burch','Brindavan Bldg Evershine Nagar Malad','MakailaBurch@yahoo.com',8795642583,'11-11-2011','female'),
+-- (9,'Genesis','Marshall','Bath Bazar Samuel Street Masjid','GenesisMarshall@gmail.com',7896541230,'10-10-2010','male'),
+-- (10,'Marlon','Todd',' Railway Station Fateh Puri','MarlonTodd@yahoo.com',8524713654,'06-22-1885','male');
+-- SELECT * FROM users;
