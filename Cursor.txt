@@ -1,0 +1,39 @@
+-- --cursor
+-- -- name of all pages with their like count
+-- declare
+--     pag_name pages.page_name%type;
+--     total int ;
+--     cursor c1 is select page_id from page_likes group by page_id;
+--     rec c1%rowtype;
+-- begin
+--     open c1;
+--     loop
+--         fetch c1 into rec;
+--         select count(*) into total from page_likes where page_likes.page_id=rec.page_id;
+--         select page_name into pag_name from pages where pages.page_id=rec.page_id;
+--         exit when c1%notfound;
+--         dbms_output.put_line(pag_name || '   ' || total);
+--     end loop;
+--     close c1;
+-- end;
+
+
+
+-- -- return all the names of people who have liked
+-- declare
+--     cursor c1(n number) is select posts_likes.user_id, users.firstname from posts_likes,users where posts_likes.user_id=users.user_id and post_id=n;
+-- begin
+--     for rec in c1(1) loop
+--         dbms_output.put_line(rec.firstname);
+--     end loop;
+-- end;
+
+
+-- -- printing all comments on particular post
+-- declare
+--     cursor c2(n2 number) is select post_id, comment_content from comments where post_id=n2;
+-- begin
+--     for rec in c2(2) loop
+--         dbms_output.put_line('comment: '||rec.comment_content);
+--     end loop;
+-- end;
