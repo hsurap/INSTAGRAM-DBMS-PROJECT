@@ -1,0 +1,28 @@
+-- --function
+-- -- total no of  users
+-- DECLARE
+--     ans int;
+--     total int ;
+--     Function Total_user return int  AS
+--     BEGIN
+--         SELECT count(*) INTO total FROM users ;
+--         return total;
+--     END ;
+-- BEGIN
+--     ans:=Total_user();
+--     DBMS_OUTPUT.PUT_LINE(ans);
+-- END;
+
+-- --total likes on a give post
+-- declare
+--     total int;
+--     ans int;
+--     function likecount(pst_id posts_likes.post_id%type) return int as
+--     begin
+--         select count(*) into total from posts_likes  where  post_id=pst_id;
+--         return total;
+--     end;
+-- begin
+--     ans:=likecount(1);
+--     DBMS_OUTPUT.PUT_LINE(ans);
+-- end;
