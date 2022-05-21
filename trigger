@@ -1,0 +1,11 @@
+--trigger
+-- create or replace trigger fna_upper
+-- before insert or update  
+-- on Users
+-- for each row
+-- begin
+--   :new.firstname:=initcap(:new.firstname);
+--   :new.lastname:=initcap(:new.lastname);
+-- end;
+-- insert into users values (16,'ishan','mazi','chandi','ishanmazi@gamil.com','9852485823',to_date('12-05-2002','dd-mm-yyyy'),'male');
+-- select * from users;
