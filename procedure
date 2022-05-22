@@ -1,0 +1,25 @@
+-- -- procedures
+-- -- to insert new user into table
+-- store procedure
+-- CREATE OR REPLACE PROCEDURE new_user(
+-- 	   new_user_id IN users.user_id%TYPE,
+-- 	   new_first_name IN users.firstname%TYPE,
+-- 	   new_last_name IN users.lastname%TYPE,
+-- 	   new_address IN users.address%TYPE,
+-- 	   new_email IN users.email%TYPE,
+-- 	   new_phone_number IN users.phone_no%TYPE,
+-- 	   new_dob IN users.dob%TYPE,
+-- 	   new_gender IN users.gender%TYPE )
+-- IS
+-- BEGIN
+
+--   INSERT INTO users
+--   VALUES (new_user_id, new_first_name,new_last_name, new_address,new_email, new_phone_number,new_dob,new_gender);
+
+--   COMMIT;
+
+-- END;
+-- begin
+-- new_user(15,'rishabh','handoo','chandi','rishabhhandoo@gamil.com','9852456823',to_date('12-04-2002','dd-mm-yyyy'),'male');
+-- end;
+-- select * from users;
