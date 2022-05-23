@@ -1,3 +1,4 @@
+-- -- ******************************************
 -- --function
 -- -- total no of  users
 -- DECLARE
@@ -13,6 +14,8 @@
 --     DBMS_OUTPUT.PUT_LINE(ans);
 -- END;
 
+-- -- ******************************************
+
 -- --total likes on a give post
 -- declare
 --     total int;
@@ -23,6 +26,26 @@
 --         return total;
 --     end;
 -- begin
---     ans:=likecount(1);
+--     ans:=likecount(3);
 --     DBMS_OUTPUT.PUT_LINE(ans);
 -- end;
+
+-- -- *******************************************
+-- -- no of friends of a given user
+-- declare 
+--     total int ;
+--     ans int;
+--     us_name users.firstname%type;
+--     function friends_count(us_id users.user_id%type) return int as
+--     begin 
+--         select firstname into us_name from users where users.user_id=us_id;
+--         DBMS_OUTPUT.PUT_LINE(us_name);
+--         select count(*) into total from friends where friends.user_id=us_id;
+--         return total;
+--     end;
+-- begin
+--     ans:=friends_count(1);
+--     DBMS_OUTPUT.PUT_LINE(ans);
+-- end;
+
+-- -- *******************************************
