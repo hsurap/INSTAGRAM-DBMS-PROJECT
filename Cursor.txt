@@ -17,19 +17,44 @@
 --     close c1;
 -- end;
 
+-- -- ********************************************
+-- -- no of post of each user
 
+-- declare
+--     cursor c5 is select user_id from posts group by user_id;
+--     rec c5%rowtype;
+--     total int;
+--     us_name users.firstname%type;
+-- begin
+--     open c5;
+--     loop
+--         fetch c5 into rec;
+--         select firstname into us_name from users where users.user_id=rec.user_id;
+--         select count(*) into total from posts where posts.user_id=rec.user_id;
+--         exit when c5%notfound;
+--         dbms_output.put_line(us_name || '   ' || total);
+--     end loop;
+--     close c5;
+-- end;
+        
+        
+    
+    
 
--- -- return all the names of people who have liked
+-- -- *********************************************
+
+-- -- return all the names of people who have liked their post 
 -- declare
 --     cursor c1(n number) is select posts_likes.user_id, users.firstname from posts_likes,users where posts_likes.user_id=users.user_id and post_id=n;
 -- begin
---     for rec in c1(1) loop
+--     for rec in c1(6) loop
 --         dbms_output.put_line(rec.firstname);
 --     end loop;
 -- end;
 
+-- -- ***********************************************
 
--- -- printing all comments on particular post
+-- -- -- printing all comments on particular post
 -- declare
 --     cursor c2(n2 number) is select post_id, comment_content from comments where post_id=n2;
 -- begin
@@ -37,3 +62,19 @@
 --         dbms_output.put_line('comment: '||rec.comment_content);
 --     end loop;
 -- end;
+
+-- -- ***********************************************
+-- --  who liked the comment(comment detail)
+-- declare 
+--     my_com comments.comment_content%type;
+--     com number:=1;
+--     cursor c3( p number) is select comments.post_id, comments.comment_id, users.firstname from comments,users where (comments.comment_id=com) and (comments.post_id=p) and (users.user_id=comments.user_id);
+-- begin
+--         select comments.comment_content into my_com from comments where comments.comment_id=com;
+--         dbms_output.put_line('comment: '||my_com);
+--     for rec in c3(1) loop
+--         dbms_output.put_line('who liked: '||rec.firstname);
+--     end loop;
+-- end;
+
+-- -- *************************************************
