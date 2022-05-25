@@ -1,25 +1,54 @@
--- -- procedures
--- -- to insert new user into table
--- store procedure
--- CREATE OR REPLACE PROCEDURE new_user(
--- 	   new_user_id IN users.user_id%TYPE,
--- 	   new_first_name IN users.firstname%TYPE,
--- 	   new_last_name IN users.lastname%TYPE,
--- 	   new_address IN users.address%TYPE,
--- 	   new_email IN users.email%TYPE,
--- 	   new_phone_number IN users.phone_no%TYPE,
--- 	   new_dob IN users.dob%TYPE,
--- 	   new_gender IN users.gender%TYPE )
+-- -- procedure to insert new posts
+-- -- no need to add date of new post
+-- CREATE OR REPLACE PROCEDURE new_post(
+-- 	   new_post_id IN posts.post_id%TYPE,
+--       new_post_content IN posts.post_content%TYPE,
+-- 	   new_user_id IN posts.user_id%TYPE
+-- 	   )
 -- IS
 -- BEGIN
 
---   INSERT INTO users
---   VALUES (new_user_id, new_first_name,new_last_name, new_address,new_email, new_phone_number,new_dob,new_gender);
+--   INSERT INTO posts
+--   VALUES (new_post_id,new_post_content,sysdate,new_user_id);
 
 --   COMMIT;
-
 -- END;
 -- begin
--- new_user(15,'rishabh','handoo','chandi','rishabhhandoo@gamil.com','9852456823',to_date('12-04-2002','dd-mm-yyyy'),'male');
+--     new_post(18,'bts',15);
 -- end;
--- select * from users;
+
+-- -- *********************************************
+-- -- no of shares of a specific post
+-- CREATE or REPLACE PROCEDURE no_of_share(p_id in int)
+-- AS
+-- no_shares int;
+-- BEGIN
+-- select count(*) into no_shares from shares where p_id = post_id;
+
+-- dbms_output.put_line(no_shares);
+-- End;
+
+-- begin
+-- no_of_share(1);
+-- end;
+
+-- -- ***********************************************
+
+-- -- procedure for most liked post
+-- create or replace procedure most_liked
+-- as
+-- likes int;
+
+-- begin
+
+-- select max(count()) into likes from posts_likes group by posts_likes.post_id order by count() fetch first 1 rows only;
+-- dbms_output.put_line(likes);
+
+-- end;
+
+
+-- begin
+-- most_liked;
+-- end;
+
+-- -- ************************************************
